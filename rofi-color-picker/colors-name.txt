@@ -10,6 +10,11 @@
 <span color='#00BFA5' weight='normal' fallback='true' lang='teal'>  Teal </span>
 <span color='#00C853' weight='normal' fallback='true' lang='green'>  Green </span>
 <span color='#64DD17' weight='normal' fallback='true' lang='light green '>  Light Green </span>
+<span color='#FF6D00' weight='normal' fallback='true' lang='orange'>  Orange </span>
+<span color='#DD2C00' weight='normal' fallback='true' lang='deep orange'>  Deep Orange</span>
+<span color='#3E2723' weight='normal' fallback='true' lang='brown'>  Brown</span>
+<span color='#212121' weight='normal' fallback='true' lang='grey'>  Grey</span>
+<span color='#263238' weight='normal' fallback='true' lang='blue grey'>  Blue Grey</span>
 <span color='#FFCDD2' weight='normal' fallback='true' lang='red 0'>  Red 0</span>  
 <span color='#EF9A9A' weight='normal' fallback='true' lang='red 1'>  Red 1</span>  
 <span color='#E57373' weight='normal' fallback='true' lang='red 2'>  Red 2</span>  

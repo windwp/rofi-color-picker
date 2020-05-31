@@ -5,6 +5,7 @@ AUTHOR="windwp"
 CONTACT='longtrieu.ls@live.com'
 CREATED="2020-06-01"
 UPDATED="2020-06-01"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 main(){
   while getopts :vhf:o:p: option; do
@@ -20,12 +21,12 @@ main(){
     esac
   done
 
-  echo "$LISTFILE"
 
+  COLORS_FILE="$DIR/colors-name.txt"
 
-  LISTFILE="${LISTFILE:-colors-name.txt}"
+  LISTFILE="${LISTFILE:-$COLORS_FILE}"
+
   ROFI_PROMPT="${ROFI_PROMPT:-""}"
-
   [[ ! -f "$LISTFILE" ]] \
     && echo "$LISTFILE not found" \
     && exit 1
