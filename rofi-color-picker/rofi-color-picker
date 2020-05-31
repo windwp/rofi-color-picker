@@ -25,7 +25,6 @@ main(){
   COLORS_FILE="$DIR/colors-name.txt"
 
   LISTFILE="${LISTFILE:-$COLORS_FILE}"
-
   ROFI_PROMPT="${ROFI_PROMPT:-""}"
   [[ ! -f "$LISTFILE" ]] \
     && echo "$LISTFILE not found" \
@@ -93,7 +92,6 @@ AUTHOR
 ------
 
 ${AUTHOR} <${CONTACT}>
-<https://budrich.github.io>
 
 SEE ALSO
 --------
@@ -104,17 +102,17 @@ rofi(1), xclip(1)
 "
 
 about='
-`fontawesome-menu` - Display all FontAwesome icons in a rofi menu
+`rofi-color-picker` - Display all FontAwesome icons in a rofi menu
 
 SYNOPSIS
 --------
 
-`fontawesome-menu` [`-v`|`-h`] [-f *LISTFILE*] [-p PROMPT] [OUTPUT]
+`rofi-color-picker` [`-v`|`-h`] [-f *LISTFILE*] [-p PROMPT] [OUTPUT]
 
 DESCRIPTION
 -----------
 
-If `fontawesome-menu` is executed without options 
+If `rofi-color-picker` is executed without options 
 or arguments, a list of all FontAwesome 5 Free 
 icons is displayed in a rofi menu. The selected icon
 will be put into the clipboard.
@@ -130,9 +128,6 @@ OPTIONS
 
 `-f` *LISTFILE*  
   File containing objects to display in the menu. 
-  Defaults to *fa5-icon-list.txt*. More lists can
-  be found here:  
-  <https://raw.githubusercontent.com/wstam88/rofi-fontawesome/> 
 
 `-p` PROMPT  
   PROMPT to display in the menu. Defaults to nothing.
