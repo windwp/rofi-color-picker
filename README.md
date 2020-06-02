@@ -1,6 +1,8 @@
 
 # Color Picker list for Rofi
 
+![preview](https://i.redd.it/av7zez4501251.png)
+
 I generated this Color Picker lists to be used as a quick search/select tool utilizing rofi, xclip and xdotool.
 
 [Material Color Chart](https://htmlcolorcodes.com/color-chart/material-design-color-chart/)
