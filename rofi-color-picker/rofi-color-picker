@@ -21,7 +21,6 @@ main(){
     esac
   done
 
-
   COLORS_FILE="$DIR/colors-name.txt"
 
   LISTFILE="${LISTFILE:-$COLORS_FILE}"
@@ -32,7 +31,7 @@ main(){
 
   (($#>1)) && shift $((--OPTIND))
 
-  ROFI_MAGIC='-dmenu -markup-rows'
+  ROFI_MAGIC='-dmenu -i -markup-rows'
 
   output=${1:-icon}
 
@@ -54,14 +53,14 @@ main(){
 printinfo(){
   case "$1" in
     m ) printf '%s' "${about}" ;;
-    
-    f ) 
+
+    f )
       printf '%s' "${bouthead}"
       printf '%s' "${about}"
       printf '%s' "${boutfoot}"
     ;;
 
-    ''|* ) 
+    ''|* )
       printf '%s' "${about}" | awk '
          BEGIN{ind=0}
          $0~/^```/{
@@ -97,7 +96,7 @@ SEE ALSO
 --------
 
 rofi(1), xclip(1)
-<https://raw.githubusercontent.com/wstam88/rofi-fontawesome/>, 
+<https://raw.githubusercontent.com/wstam88/rofi-fontawesome/>,
 <http://fontawesome.io>
 "
 
@@ -112,48 +111,48 @@ SYNOPSIS
 DESCRIPTION
 -----------
 
-If `rofi-color-picker` is executed without options 
-or arguments, a list of all FontAwesome 5 Free 
+If `rofi-color-picker` is executed without options
+or arguments, a list of all FontAwesome 5 Free
 icons is displayed in a rofi menu. The selected icon
 will be put into the clipboard.
 
 OPTIONS
 -------
 
-`-v`  
+`-v`
   Show version and exit.
 
-`-h`  
+`-h`
   Show help and exit.
 
-`-f` *LISTFILE*  
-  File containing objects to display in the menu. 
+`-f` *LISTFILE*
+  File containing objects to display in the menu.
 
-`-p` PROMPT  
+`-p` PROMPT
   PROMPT to display in the menu. Defaults to nothing.
 
-`-o` *ROFI-OPTIONS*  
-  Additional options to pass to `rofi`. Put the all options 
+`-o` *ROFI-OPTIONS*
+  Additional options to pass to `rofi`. Put the all options
   in one quoted string. Example:
   `fontawesome-menu -o '"'"'-i -columns 6 -width 100 -lines 20 -bw 2 -yoffset -2 -location 1'"'"'`
 
 
 EXAMPLES
---------  
+--------
 
 ``` text
 $ rofi-color-picker \
     -o "-columns 6 -width 100 -location 1 -lines 20 -i" \
     -p "Select icon: " \
 
-``` 
+```
 
 DEPENDENCIES
 ------------
 
-rofi  
-fontawesome  
-xclip  
+rofi
+fontawesome
+xclip
 '
 
 
